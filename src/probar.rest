@@ -1,0 +1,45 @@
+POST  http://localhost:3000/api/tasks/
+Content-Type: application/json
+
+{
+   
+    "description":"sin titulo"
+   
+}
+
+###
+GET http://localhost:3000/api/tasks/
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/api/tasks?size=1&page=0
+Content-Type: application/json
+
+
+### 
+GET http://localhost:3000/api/tasks/6074c4ad0a304a107c342f56
+Content-Type: application/json
+
+
+###
+
+DELETE  http://localhost:3000/api/tasks/6074c79a338a4a21c0ed4410
+Content-Type: application/json
+
+
+###
+
+// Ver todas las tareas hechas
+
+GET http://localhost:3000/api/tasks/done
+
+
+###
+
+PUT http://localhost:3000/api/tasks/6074c4ad0a304a107c342f56
+Content-Type: application/json
+
+{
+    "description":"mola mucho"
+}
